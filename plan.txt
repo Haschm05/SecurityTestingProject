@@ -1,0 +1,91 @@
+Queries:
+•	Can we use pfSense?
+•	Is Kali Linux viable? Or a Linux workstation or web server?
+•	Will there be any class/course restraints? 
+•	Are there any changes you guys would suggest?
+•	What times could work?
+•	Is there anybody you would recommend collaborating with for this project?
+
+Project #1 - Virtual Enterprise Security Lab
+Proposed architecture
+
+Internet -> Firewall, NAT/ACL, VPN/VLAN -> Virtual Network -> Server, Client, Security VLAN 
+Server VLAN -> AD DC, Web Server, File Server
+Client VLAN -> Windows client, Linux client -> Network Monitor, IDS, Logs
+Security VLAN -> security onion?
+
+Potential additions:
+•	Windows Server / Active Directory
+•	Windows workstation
+•	Linux workstation
+•	Linux web server
+•	File server
+•	pfSense
+•	Security Onion
+•	Kali Linux
+•	Vulnerable VM
+•	Optional honeypot
+Can demonstrate understanding of:
+Networking
+•	TCP/IP
+•	DNS
+•	DHCP
+•	VLANs
+•	Routing
+•	NAT
+•	Firewall rules
+•	Network segmentation
+Security
+•	IDS/IPS
+•	Network monitoring
+•	Authentication
+•	Least privilege
+•	Segmentation
+•	Attack detection
+Blue team
+•	Alert investigation
+•	Log analysis
+•	Threat hunting
+•	Incident response
+Red team
+•	Reconnaissance
+•	Enumeration
+•	Vulnerability discovery
+•	Exploitation
+•	Lateral movement
+DFIR
+•	Evidence acquisition
+•	Disk imaging
+•	Timeline analysis
+•	Memory analysis
+•	Log correlation
+•	Incident reconstruction
+
+Attack the lab
+Scenario A - Network reconnaissance
+Kali Linux -> Host discovery, Port scanning, Service enumeration, OS fingerprinting
+
+Security Onion should see the resulting network activity.
+Then document:
+What did the attacker do?
+What logs were generated?
+What alerts fired?
+What could the SOC analyst determine?
+
+Scenario B - Compromised workstation
+Make a deliberately vulnerable Windows workstation.
+Then simulate:
+Attacker -> Initial Access -> Execution -> Persistence -> Credential Access -> Lateral Movement -> Data Access
+
+For example:
+1.	Recon
+2.	Initial access
+3.	Execute commands
+4.	Establish persistence
+5.	Access another system
+6.	Generate logs
+7.	Detect the activity
+8.	Investigate
+9.	Contain
+10.	Acquire evidence
+11.	Produce a report
